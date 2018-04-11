@@ -10,34 +10,29 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSiteName</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-        </div>
-      </nav>
-        
-      <div class="container">
-        <h3>Basic Navbar Example</h3>
-        <p>A navigation bar is a navigatiodldldldldldn header that is placed at the top of the page.</p>
+  <div class="nav">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>    
       </div>
-    
-    
-    
-    
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="navbar-left"><a href="#">CEI IDIOMAS</a></li>
+          
+          <li class="active"><a href="index.html">O CURSO</a></li>
+          <li><a href="cursos.html">NOSSOS CURSOS</a></li>
+          <li ><a href="#">NOVIDADES</a></li>
+          <li><a href="#">ONDE ESTAMOS</a></li>
+        </ul>
+      </div>
+    </nav>
+
+        
     <div class="container">
-
-
-    
-    
-        <h2>Carousel Example</h2>  
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -74,9 +69,15 @@
       </div>
       
 
+
+
+
+
+
+
 <div class="row1">
   
-  <div class="container">
+  <div class="row_container">
       <img src="data:image/png;base64,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" class="img-responsive img-center">
 
     <h1>O CURSO CEI IDIOMAS</h1>
@@ -86,7 +87,7 @@
   </div>
 </div>
 <div class="row2">
-  <div class="container">
+  <div class="row_container">
     <img src="data:image/png;base64,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" class="img-responsive img-center">
 
     <div class="row2-h1"> <h1>Heading</h1> </div>
@@ -101,7 +102,52 @@
 
 
 
-<div class="container">
+</div>
+<div class="services">
+    <div class="container">     
+        <div class="row">
+
+            <div class="col-md-3 services-section">
+                <img src="eua.jpg"/>
+                    <div class="services-paragraph">
+                    <h3>NOSSOS CURSOS</h3>
+                    <p>Venha saber mais sobre os cursos que nós oferecemos!</p>
+                    </div>
+            </div>
+
+            <div class="col-md-3 services-section">
+                <img src="icon-novidades.png"/>
+                    <div class="services-paragraph">
+                    <h3>NOVIDADES</h3>
+                    <p>Agora temos curso de Japones, além de muitas outras novidades!</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 services-section">
+                <img src="fale-conosco.png"/>
+                    <div class="services-paragraph">
+                    <h3>FALE CONOSCO</h3>
+                    <p>Mande um e-mail pra nós do CURSO CEI, para tirarmos duvidas e agendar visitas!</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 services-section">
+                <img src="logo.png"/>
+                    <div class="services-paragraph">
+                    <h3>THE KIDS CLUB</h3>
+                    <p>Temos aulas dinâmicas para crianças de até 10 anos!</p>
+                    </div>
+            </div>
+
+        </div><!--/Row-->
+    </div><!--/Container-->
+    </div><!--/Services--> 
+    <div class="footer">
+  <p>Curso Cei Idiomas</p>
+</div>
+
+
+<!-- <div class="container">
     <h2>Image Gallery</h2>
     <p>The .thumbnail class can be used to display an image gallery.</p>
     <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
@@ -138,12 +184,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
 
-
+  <app-root></app-root>
 </body>
 </html>
 
