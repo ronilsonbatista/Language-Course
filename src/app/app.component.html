@@ -1,141 +1,155 @@
-     <div>
-            <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
-                      <div class="navbar-header">
-                        <a class="navbar-brand" href="#">CEI IDIOMAS</a>
-                      </div>
-                      <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">O CURSO</a></li>
-                            <li><a href="nossos-cursos.html">NOSSOS CURSOS</a></li>
-                            <li ><a href="#">NOVIDADES</a></li>
-                            <li><a href="#">ONDE ESTAMOS</a></li>
-                      </ul>
-                    </div>
-             </nav>
+<div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CEI IDIOMAS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="">O CURSO</a>
+                </li>
+                <li>
+                    <a href="/app-nossos-cursos">NOSSOS CURSOS</a>
+                </li>
+                <li>
+                    <a href="/app-cadastro">INFORMAÇÕES</a>
+                </li>
+                <li>
+                    <a href="#">ONDE ESTAMOS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
 
-            
-            <div class="container">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-          
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner">
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
                 <div class="item active">
-                  <img src="https://dkru86weszx9t.cloudfront.net/blog/wp-content/uploads/2013/12/English.jpg" alt="Los Angeles" style="width:100%;">
+                    <img src="https://dkru86weszx9t.cloudfront.net/blog/wp-content/uploads/2013/12/English.jpg" alt="Los Angeles" style="width:100%;">
                 </div>
-          
+
                 <div class="item">
-                  <img src="https://www.estudopratico.com.br/wp-content/uploads/2017/03/espanhol-el-genero-de-los-sustantivos.jpg" alt="Chicago" style="width:100%;">
+                    <img src="https://www.estudopratico.com.br/wp-content/uploads/2017/03/espanhol-el-genero-de-los-sustantivos.jpg" alt="Chicago"
+                        style="width:100%;">
                 </div>
-              
+
                 <div class="item">
-                  <img src="http://noticias.universia.com.br/net/images/educacion/f/fa/fac/faculdade-usp-curso-italiano-basico-gratis-noticias.jpg" alt="New york" style="width:100%;">
+                    <img src="http://noticias.universia.com.br/net/images/educacion/f/fa/fac/faculdade-usp-curso-italiano-basico-gratis-noticias.jpg"
+                        alt="New york" style="width:100%;">
                 </div>
-              </div>
-          
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
-              </a>
-            </div>
-            </div>
-          
-    
+            </a>
+        </div>
+    </div>
+
+
     <div class="row1">
-      
-      <div class="row_container">
-          <img src="https://igx.4sqi.net/img/general/600x600/32637417_lOaqp6X3M0aZrrlfcxKQw8Oi8tPIE_pIy1-lMHA_Hdc.jpg" class="img-responsive img-center">
-    
-        <h1>O CURSO CEI IDIOMAS</h1>
-        <ul class="items">
+
+        <div class="row_container">
+            <img src="http://mododesign.com.br/wp-content/uploads/2015/12/lounges_brasas_01.png" class="img-responsive img-center">
+
+            <h1>O CURSO CEI IDIOMAS</h1>
+            <ul class="items">
                 <li *ngFor="let data of dataJson">
-                        <p>{{data.sobre}}</p>
+                    <p>{{data.sobre}}</p>
                 </li>
             </ul>
-      </div>
+        </div>
     </div>
 
 
 
     <div class="row2">
-      <div class="row_container">
-        <img src="https://igx.4sqi.net/img/general/600x600/32637417_lOaqp6X3M0aZrrlfcxKQw8Oi8tPIE_pIy1-lMHA_Hdc.jpg" class="img-responsive img-center">
-            <div class="row2-h1"> <h1>Heading</h1> </div>
-                <ul class="items">
-                    <li *ngFor="let data of dataJson">
-                            <p>{{data.curso}}</p>
-                    </li>
-                </ul>
+        <div class="row_container">
+            <img src="http://mododesign.com.br/wp-content/uploads/2015/12/lounges_brasas_04.png" class="img-responsive img-center">
+            <div class="row2-h1">
+                <h1>Heading</h1>
+            </div>
+            <ul class="items">
+                <li *ngFor="let data of dataJson">
+                    <p>{{data.curso}}</p>
+                </li>
+            </ul>
         </div>
     </div>
 
     <div class="services">
-        <div class="container">     
+        <div class="container">
             <div class="row">
-    
+
                 <div class="col-md-3 services-section">
-                    <img src="https://i.pinimg.com/originals/85/85/20/858520a97b62edfec08c29eb0f089e10.jpg"/>
-                        <div class="services-paragraph">
+                    <img src="http://www.wizardsjc.net.br/images/miniaturas/ingles.png" />
+                    <div class="services-paragraph">
                         <h3>NOSSOS CURSOS</h3>
                         <ul class="items">
-                                <li *ngFor="let data of dataJson">
-                                        <p>{{data.nossoCurso}}</p>
-                                </li>
-                            </ul>
-                        </div>
-                </div>
-    
-                <div class="col-md-3 services-section">
-                    <img src="http://www.projetaambiente.com.br/wp-content/uploads/2014/08/icon_novidades.png"/>
-                        <div class="services-paragraph">
-                        <h3>NOVIDADES</h3>
-                        <ul class="items">
-                                <li *ngFor="let data of dataJson">
-                                        <p>{{data.novidade}}</p>
-                                </li>
-                            </ul>
+                            <li *ngFor="let data of dataJson">
+                                <p>{{data.nossoCurso}}</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-    
+
                 <div class="col-md-3 services-section">
-                    <img src="http://cssolutions.com.br/wp-content/uploads/2016/04/contato_icone.png"/>
-                        <div class="services-paragraph">
+                    <img src="https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-70-512.png" />
+                    <div class="services-paragraph">
+                        <h3>NOVIDADES</h3>
+                        <ul class="items">
+                            <li *ngFor="let data of dataJson">
+                                <p>{{data.novidade}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 services-section">
+                    <img src="https://image.flaticon.com/icons/png/512/219/219980.png" />
+                    <div class="services-paragraph">
                         <h3>FALE CONOSCO</h3>
                         <ul class="items">
-                                <li *ngFor="let data of dataJson">
-                                        <p>{{data.fale}}</p>
-                                </li>
-                            </ul>
-                      </div>
+                            <li *ngFor="let data of dataJson">
+                                <p>{{data.fale}}</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-    
+
                 <div class="col-md-3 services-section">
-                    <img src="http://1.bp.blogspot.com/-6T0n34T0mHY/U4JROiXCfDI/AAAAAAAABTA/bJO0z3jVJIE/s1600/crian%C3%A7a1+001_1.jpg
-                    "/>
-                        <div class="services-paragraph">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Creative-Tail-People-boy.svg/2000px-Creative-Tail-People-boy.svg.png
+                    " />
+                    <div class="services-paragraph">
                         <h3>THE KIDS CLUB</h3>
                         <ul class="items">
-                                <li *ngFor="let data of dataJson">
-                                        <p>{{data.kids}}</p>
-                                </li>
-                            </ul>
-                        </div>
+                            <li *ngFor="let data of dataJson">
+                                <p>{{data.kids}}</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-    
-            </div><!--/Row-->
-        </div><!--/Container-->
-        </div><!--/Services--> 
-        <div class="footer">
-      <p>Curso Cei Idiomas</p>
+
+            </div>
+            <!--/Row-->
+        </div>
+        <!--/Container-->
     </div>
-    
+    <!--/Services-->
+    <div class="footer">
+        <p>Curso Cei Idiomas</p>
+    </div>
