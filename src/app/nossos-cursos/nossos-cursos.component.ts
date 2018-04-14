@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nossos-cursos',
-  template: `
+    selector: 'app-nossos-cursos',
+    template: `
    
   <br>
   <h3>NOSSOS CURSOS </h3>
@@ -51,13 +51,13 @@ import { Component, OnInit } from '@angular/core';
     <br>  
 
   `,
-  styles: []
+    styles: []
 })
 export class NossosCursosComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }
